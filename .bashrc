@@ -18,6 +18,7 @@ alias kingsley='ssh -p2222 ceton@kingsley'
 alias nave='ssh nave'
 alias murphy='ssh murphy'
 alias king='ssh mountainking'
+alias wanderer='ssh wanderer'
 alias git-diff='reset | git diff'
 
 export EDITOR='vim'
