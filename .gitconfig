@@ -1,0 +1,21 @@
+[user]
+	name = Ryan Baker
+	email = ryanb@cetoncorp.com
+[giggle]
+	compact-mode = false
+	main-window-geometry = 1445x985+121+118
+[diff]
+	color = auto
+[status]
+	color = auto
+[pager]
+	color = true
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[diff "odf"]
+    textconv=odt2txt
+
