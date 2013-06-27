@@ -21,7 +21,10 @@ alias king='ssh mountainking'
 alias wanderer='ssh wanderer'
 alias git-diff='reset | git diff'
 alias diff='colordiff'
-alias logcat='python ~/dotfiles/coloredlogcat.py'
+
+# Setup logcat for Mcx
+TAGS='cetonmcx McxActivity McxService ConnectingActivity McxAudioRunnable mcx-jni'
+alias logcat='adb logcat $TAGS *:E | python ~/dotfiles/coloredlogcat.py'
 
 export EDITOR='vim'
 

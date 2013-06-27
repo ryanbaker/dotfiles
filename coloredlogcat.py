@@ -58,12 +58,14 @@ def indent_wrap(message, indent=0, width=80):
     return messagebuf.getvalue()
 
 
-LAST_USED = [RED,GREEN,YELLOW,BLUE,MAGENTA,CYAN,WHITE]
+LAST_USED = [RED,GREEN,YELLOW,MAGENTA,BLUE,CYAN,WHITE]
 KNOWN_TAGS = {
-    "dalvikvm": BLUE,
-    "Process": BLUE,
-    "ActivityManager": CYAN,
-    "ActivityThread": CYAN,
+    "cetonmcx": BLUE,
+    "McxActivity": CYAN,
+    "McxService": CYAN,
+    "ConnectingActivity": CYAN,
+    "McxAudioRunnable": CYAN,
+    "mcx-jni": CYAN
 }
 
 def allocate_color(tag):
