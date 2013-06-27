@@ -21,6 +21,7 @@ alias king='ssh mountainking'
 alias wanderer='ssh wanderer'
 alias git-diff='reset | git diff'
 alias diff='colordiff'
+alias logcat='python ~/dotfiles/coloredlogcat.py'
 
 export EDITOR='vim'
 
