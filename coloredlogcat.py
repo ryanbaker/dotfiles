@@ -65,7 +65,8 @@ KNOWN_TAGS = {
     "McxService": CYAN,
     "ConnectingActivity": CYAN,
     "McxAudioRunnable": CYAN,
-    "mcx-jni": CYAN
+    "mcx-jni": CYAN,
+    "audio_hw_primary": CYAN
 }
 
 def allocate_color(tag):

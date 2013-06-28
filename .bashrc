@@ -23,7 +23,7 @@ alias git-diff='reset | git diff'
 alias diff='colordiff'
 
 # Setup logcat for Mcx
-TAGS='cetonmcx McxActivity McxService ConnectingActivity McxAudioRunnable mcx-jni'
+TAGS='cetonmcx McxActivity McxService ConnectingActivity McxAudioRunnable mcx-jni audio_hw_primary'
 alias logcat='adb logcat $TAGS *:E | python ~/dotfiles/coloredlogcat.py'
 
 export EDITOR='vim'
