@@ -95,6 +95,7 @@ TAGTYPES = {
     "I": "%s%s%s " % (format(fg=BLACK, bg=GREEN), "I".center(TAGTYPE_WIDTH), format(reset=True)),
     "W": "%s%s%s " % (format(fg=BLACK, bg=YELLOW), "W".center(TAGTYPE_WIDTH), format(reset=True)),
     "E": "%s%s%s " % (format(fg=BLACK, bg=RED), "E".center(TAGTYPE_WIDTH), format(reset=True)),
+    "F": "%s%s%s " % (format(fg=RED, bg=WHITE), "F".center(TAGTYPE_WIDTH), format(reset=True)),
 }
 
 retag = re.compile("^([A-Z])/([^\(]+)\(([^\)]+)\): (.*)$")
@@ -112,7 +113,7 @@ while True:
     try:
         line = input.readline()
     except KeyboardInterrupt:
-        linebuf.write("Error reading line");
+        break;
 
     match = retag.match(line)
     if not match is None:
