@@ -111,7 +111,7 @@ while True:
     try:
         line = input.readline()
     except KeyboardInterrupt:
-        break
+        linebuf.write("Error reading line");
 
     match = retag.match(line)
     if not match is None:
