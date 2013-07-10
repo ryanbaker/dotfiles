@@ -116,7 +116,7 @@ while True:
     except KeyboardInterrupt:
         break;
 
-    if line[0].isdigit():
+    if line and line[0].isdigit():
         match = retagWithTimestamp.match(line)
         if not match is None:
             date, time, tagtype, tag, owner, message = match.groups()
