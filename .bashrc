@@ -24,7 +24,13 @@ alias diff='colordiff'
 
 # Setup logcat for Mcx
 TAGS='cetonmcx McxActivity McxService ConnectingActivity McxAudioRunnable mcx-jni audio_hw_primary DEBUG'
-alias logcat='adb logcat -v time $TAGS *:E | python ~/dotfiles/coloredlogcat.py'
+function logcat {
+    if [ $1 ]; then
+        cat $1 | python ~/dotfiles/coloredlogcat.py
+    else
+        adb logcat -v time $TAGS *:E | python ~/dotfiles/coloredlogcat.py
+    fi
+}
 alias dumpstats='adb shell am broadcast -a com.ceton.mcx.DUMPSTATS'
 
 export EDITOR='vim'
