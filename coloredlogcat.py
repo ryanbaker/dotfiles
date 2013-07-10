@@ -99,6 +99,7 @@ TAGTYPES = {
 }
 
 retag = re.compile("^([A-Z])/([^\(]+)\(([^\)]+)\): (.*)$")
+retagWithTimestamp = re.compile("^([0-9]+-[0-9]+).([0-9]+:[0-9]+:[0-9]+.[0-9]+).([A-Z])/([^\(]+)\(([^\)]+)\): (.*)$")
 
 # to pick up -d or -e
 adb_args = ' '.join(sys.argv[1:])
@@ -115,15 +116,29 @@ while True:
     except KeyboardInterrupt:
         break;
 
-    match = retag.match(line)
+    if line[0].isdigit():
+        match = retagWithTimestamp.match(line)
+        if not match is None:
+            date, time, tagtype, tag, owner, message = match.groups()
+    else:
+        match = retag.match(line)
+        if not match is None:
+            tagtype, tag, owner, message = match.groups()
+            date = ""
+            time = ""
+
     if not match is None:
-        tagtype, tag, owner, message = match.groups()
         linebuf = StringIO.StringIO()
 
         # center process info
         if PROCESS_WIDTH > 0:
             owner = owner.strip().center(PROCESS_WIDTH)
             linebuf.write("%s%s%s " % (format(fg=BLACK, bg=BLACK, bright=True), owner, format(reset=True)))
+
+        # display the timestamp if present
+        if date and time:
+            linebuf.write("%s " % date);
+            linebuf.write("%s " % time);
 
         # right-align tag title and allocate color if needed
         tag = tag.strip()
