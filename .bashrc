@@ -19,6 +19,7 @@ alias nave='ssh nave'
 alias murphy='ssh murphy'
 alias king='ssh mountainking'
 alias wanderer='ssh wanderer'
+alias tusseladd='ssh tusseladd'
 alias git-diff='reset | git diff'
 alias diff='colordiff'
 
