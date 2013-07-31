@@ -26,6 +26,8 @@ set t_ts=]1; "Set the tab title in iTerm
 set t_fs=    "Set the tab title in iTerm
 set ruler "Set the statusline in OS X
 
+call pathogen#infect()
+
 vmap p "_dP
 vmap P "_dP
 
