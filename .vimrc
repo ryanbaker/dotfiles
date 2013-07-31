@@ -154,5 +154,7 @@ autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 au BufRead,BufNewFile *.vala            setfiletype vala
 au BufRead,BufNewFile *.vapi            setfiletype vala
 
-
+" syntastic customizations
+let g:syntastic_php_checkers=['php']
+let g:syntastic_java_checkers=[]
 
