@@ -20,6 +20,7 @@ alias murphy='ssh murphy'
 alias king='ssh mountainking'
 alias wanderer='ssh wanderer'
 alias tusseladd='ssh tusseladd'
+alias dracano='ssh dracano'
 alias git-diff='reset | git diff'
 alias diff='colordiff'
 
