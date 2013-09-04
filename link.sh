@@ -1,6 +1,6 @@
 #!/bin/sh
 cd
-rm -rf .vim .gitconfig .vimrc .bash_profile .profile .bash_rc
+rm -rf .vim .gitconfig .vimrc .bash_profile .profile .bash_rc .bashrc
 ln -s dotfiles/.vim
 ln -s dotfiles/.vimrc
 ln -s dotfiles/.gitconfig
