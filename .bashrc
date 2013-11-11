@@ -21,6 +21,7 @@ alias king='ssh mountainking'
 alias wanderer='ssh wanderer'
 alias tusseladd='ssh tusseladd'
 alias dracano='ssh dracano'
+alias elysian='ssh elysian'
 alias git-diff='reset | git diff'
 alias diff='colordiff'
 
