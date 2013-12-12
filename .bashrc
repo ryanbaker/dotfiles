@@ -55,6 +55,9 @@ export PROMPT_COMMAND='history -a'
 function ecco {
     ssh -p2222 -i ~/.ssh/mcx_id_rsa root@$1
 }
+function tokul {
+    ssh -p2222 -i ~/.ssh/tokul_id_rsa root@$1
+}
 
 SED_VERSION=`sed --version 2>&1 | head -1 | cut -f4 -d' '`
 if [ "$SED_VERSION" != "4.1.5" ]; then
