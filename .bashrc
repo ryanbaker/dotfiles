@@ -55,8 +55,8 @@ export PROMPT_COMMAND='history -a'
 function ecco {
     ssh -p2222 -i ~/.ssh/mcx_id_rsa root@$1
 }
-function tokul {
-    ssh -p2222 -i ~/.ssh/tokul_id_rsa root@$1
+function zopa {
+    ssh -p2222 -i ~/.ssh/zopa_id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@$1
 }
 
 SED_VERSION=`sed --version 2>&1 | head -1 | cut -f4 -d' '`
