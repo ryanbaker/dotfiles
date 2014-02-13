@@ -10,6 +10,7 @@ export PATH
 # User specific aliases and functions
 alias hadron='ssh -p223 hadron.cetoncorp.com'
 alias knife='ssh -p222 knife.cetoncorp.com'
+alias knife='ssh -p222 fios.ceton.net'
 alias fabian='ssh fabian'
 alias atx1='ssh -p2222 ceton@atxproto1'
 alias atx2='ssh -p2222 ceton@atxproto2'
