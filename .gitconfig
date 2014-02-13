@@ -19,3 +19,7 @@
 [diff "odf"]
     textconv=odt2txt
 
+[core]
+	deltaBaseCacheLimit = 1G
+[push]
+	default = simple
