@@ -6,7 +6,8 @@ export ANDROID_SDK=$HOME/dev/android/adt/sdk
 export ANDROID_NDK=$HOME/dev/android/ndk
 PATH=$PATH:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools:${ANDROID_SDK}/build-tools/android-4.2.2:${ANDROID_NDK}
 # arm-none-eabi-gcc
-PATH=$PATH:$HOME/gcc/arm-none-eabi-gcc/bin
+#PATH=$PATH:$HOME/gcc/arm-none-eabi-gcc/bin
+PATH=$PATH:$HOME/dev/gcc-arm-none-eabi-5_4-2016q3/bin
 # Export PATH
 export PATH
 
