@@ -13,3 +13,4 @@ if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 
+ssh-add -A 2>/dev/null
