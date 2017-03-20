@@ -7,6 +7,4 @@ ln -s dotfiles/.gitconfig
 ln -s dotfiles/.bash_profile
 ln -s dotfiles/.profile
 ln -s dotfiles/.bashrc
-cd .ssh
-rm -rf config
-ln -s dotfiles/ssh/config
+
