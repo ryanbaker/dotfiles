@@ -1,0 +1,31 @@
+Host hadron
+	Port 223
+Host knife
+	Port 222
+Host git.cetoncorp.com
+    Port 22
+Host *
+    ForwardAgent yes
+    ForwardX11 yes
+    GSSAPIDelegateCredentials yes
+# Zopa
+Host 192.168.1.121
+    IdentityFile ~/.ssh/zopa_id_rsa
+    ForwardAgent yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    User root
+    Port 2222
+Host 10.0.1.17
+    IdentityFile ~/.ssh/zopa_id_rsa
+    ForwardAgent yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    User root
+    Port 2222
+Host lokiproducts.com
+    Port 2356
+    User ryan
+Host thegstreamer
+    HostName tusseladd
+    Port 2223
