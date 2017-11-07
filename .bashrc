@@ -51,7 +51,7 @@ alias grep="grep --color=auto"
 
 # Avoid succesive duplicates in the bash command history.
 export HISTCONTROL=ignoredups
-export HISTFILESIZE=100000 #increase the size
+export HISTFILESIZE=1000000 #increase the size
 shopt -s histappend #append instead of restarting on each new session
 # Append commands to the history every time a prompt is shown,
 # instead of after closing the session.
