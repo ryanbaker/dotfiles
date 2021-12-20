@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/ryanb/dev/ltib/rpm/SOURCES/mcxpk/PAK/Source/Platform/iMX6/PALimpl/AVRenderer'
-let g:netrw_dirhist_2='/home/ryanb/dev/ltib/rpm/SOURCES/mcxpk/PAK/Source/Platform/iMX6/PALimpl/Input'
-let g:netrw_dirhist_3='/Users/ryanb/dev/iris/res/values'
-let g:netrw_dirhist_4='/Users/ryanb/dev/iris/res'
-let g:netrw_dirhist_5='/Users/ryanb/dev/iris/res/values-sw720dp'
-let g:netrw_dirhist_6='/Users/ryanb/dev/iris/res'
-let g:netrw_dirhist_7='/Users/ryanb/dev/iris/res/values-sw720dp'
-let g:netrw_dirhist_8='/Users/ryanb/.vim'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/ryanb/.config'
