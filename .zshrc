@@ -51,7 +51,8 @@ function zopa {
 }
 
 bindkey '^R' history-incremental-search-backward
-
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
