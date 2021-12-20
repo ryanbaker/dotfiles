@@ -27,6 +27,7 @@ alias diff='colordiff'
 
 export EDITOR='vim'
 
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 export CLICOLOR=1
 alias ll='ls -l'
 alias la='ls -al'
@@ -48,6 +49,9 @@ function ecco {
 }
 function zopa {
     ssh -p2222 -i ~/.ssh/zopa_id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@$1
+}
+function agx {
+    ssh ce@$1
 }
 
 bindkey '^R' history-incremental-search-backward
