@@ -8,9 +8,5 @@ export LC_ALL=en_US.UTF-8
 if [ -f ~/.profile ]; then
     source ~/.profile
 fi
-# Source .bashrc, containing non-login related bash initializations.
-if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
-fi
 
 ssh-add -A 2>/dev/null
