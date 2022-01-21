@@ -5,7 +5,7 @@
 	compact-mode = false
 	main-window-geometry = 1445x985+121+118
 [diff]
-	color = auto
+    color = auto
 [status]
 	color = auto
 [pager]
@@ -18,4 +18,5 @@
     remote = green
 [diff "odf"]
     textconv=odt2txt
-
+[color "diff"]
+	meta = bold blue
