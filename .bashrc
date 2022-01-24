@@ -5,10 +5,6 @@
 #	. /etc/bashrc
 #fi
 
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
-fi
-
 export PATH
 
 # User specific aliases and functions
@@ -30,7 +26,7 @@ export HISTFILESIZE=1000000 #increase the size
 shopt -s histappend #append instead of restarting on each new session
 # Append commands to the history every time a prompt is shown,
 # instead of after closing the session.
-export PROMPT_COMMAND='history -a'
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 function agx {
     ssh ce@agx-$1

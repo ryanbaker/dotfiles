@@ -9,4 +9,9 @@ if [ -f ~/.profile ]; then
     source ~/.profile
 fi
 
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+
+
 ssh-add -A 2>/dev/null
