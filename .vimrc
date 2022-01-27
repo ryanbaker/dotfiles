@@ -11,7 +11,7 @@ set confirm						"Tell me if something fucks up
 set visualbell t_vb=			"Don't ring any bells
 set mouse=a						"Use the mouse in all modes
 set title						"Let VIM manage the term title
-set titlestring=%t\ %y\ %r\ %m	"Set a useful term title			
+set titlestring=%F\ %y\ %r\ %m	"Set a useful term title			
 set titleold=Terminal			"Get rid of that stupid flying message
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc 		"Don't tab complete this much
 set viminfo='20,\"50
@@ -22,8 +22,6 @@ set fmr={,}
 set fdm=marker
 set nofen
 set path=.
-set t_ts=]1; "Set the tab title in iTerm
-set t_fs=    "Set the tab title in iTerm
 set ruler "Set the statusline in OS X
 
 call pathogen#infect()
