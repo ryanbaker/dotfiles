@@ -1,0 +1,22 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[MainWindow]
+Height 1440=480
+State=AAAA/wAAAAD9AAAAAAAAA0QAAAGYAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 2560=836
+
+[Print]
+PrintHeight=20
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/Screenshot_20220523_090705.png
+File2[$e]=$HOME/Downloads/Photos-001/IMG_20220605_130059.jpg
+File3[$e]=$HOME/Pictures/flir_screenshot.jpeg
+Name1[$e]=Screenshot_20220523_090705.png
+Name2[$e]=IMG_20220605_130059.jpg
+Name3[$e]=flir_screenshot.jpeg
+
+[SideBar]
+IsVisible ViewMode=true

@@ -1,0 +1,32 @@
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+Height 1080=1049
+Height 1440=1377
+State=AAAA/wAAAAD9AAAAAAAABPwAAAUXAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1276
+Width 2560=1276
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/000054_001.pdf
+File10[$e]=$HOME/Downloads/Secret Harbour Beach Resort.pdf
+File2[$e]=$HOME/Downloads/Paycheck1914551.pdf
+File3[$e]=$HOME/Downloads/Paycheck1914551 (1).pdf
+File4[$e]=$HOME/Downloads/ADA-Health-History-Form.pdf
+File5[$e]=$HOME/Downloads/2021_Sequoia One PEO_Anthem PPO HSA 2800.pdf
+File6[$e]=$HOME/Downloads/Shipping label for Ryan 20220422.pdf
+File7[$e]=$HOME/Downloads/Paycheck2103039.pdf
+File8[$e]=$HOME/Downloads/DBaker.pdf
+File9[$e]=$HOME/dev/flir/Authentication_Package/102-2013-104 Integrating with Boson Authentication App Note, Rev 100.pdf
+Name1[$e]=000054_001.pdf
+Name10[$e]=Secret Harbour Beach Resort.pdf
+Name2[$e]=Paycheck1914551.pdf
+Name3[$e]=Paycheck1914551 (1).pdf
+Name4[$e]=ADA-Health-History-Form.pdf
+Name5[$e]=2021_Sequoia One PEO_Anthem PPO HSA 2800.pdf
+Name6[$e]=Shipping label for Ryan 20220422.pdf
+Name7[$e]=Paycheck2103039.pdf
+Name8[$e]=DBaker.pdf
+Name9[$e]=102-2013-104 Integrating with Boson Authentication App Note, Rev 100.pdf

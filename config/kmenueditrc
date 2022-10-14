@@ -1,0 +1,14 @@
+[General]
+SplitterSizes=596,798
+
+[KFileDialog Settings]
+Recent Files[$e]=Logic-2.3.47-master.AppImage,file:$HOME/Applications/Fiji.app/ImageJ-linux64,file:$HOME/Applications/Fiji.app/ImageJ2.desktop,file:$HOME/Applications/Fiji.app/images/icon.png,file:$HOME/Applications/Fiji.app/images/icon-flat.png,file:$HOME/Applications/Logic-2.3.47-master.AppImage
+Recent URLs[$e]=file:$HOME/Applications/,file:$HOME/Applications/Fiji.app/,file:$HOME/Applications/Fiji.app/images/
+
+[MainWindow]
+Height 1080=480
+Height 1440=480
+State=AAAA/wAAAAD9AAAAAAAABXMAAAGYAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=640
+Width 2560=1395

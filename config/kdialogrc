@@ -1,0 +1,14 @@
+[FileDialogSize]
+Height 1080=480
+Height 1440=935
+Width 1920=640
+Width 2560=1735
+
+[KFileDialog Settings]
+Recent Files[$e]=36dbe7ef-9f26-4943-af7a-9a292c4f7a16.ics,file:$HOME/ssh/id_rsa.pub.txt,file:$HOME/ssh/id_rsa.txt,file:$HOME/ssh/config.txt,file:$HOME/ssh/ce_id_rsa.txt,file:$HOME/ssh/ce_id_rsa.pub.txt,file:$HOME/Pictures/Screenshot_20221010_130727.png,file:$HOME/Downloads/familypayment (2).pdf,file:$HOME/Downloads/Misc_Product_Shipping_Instructions_and_Repair_Form.pdf,file:$HOME/Downloads/Donor Questionnaire Report Screen.pdf,file:$HOME/Downloads/Blank diagram (1).jpeg,file:$HOME/Downloads/Blank diagram.jpeg,file:$HOME/Downloads/familypayment (1).pdf,file:$HOME/Downloads/60c89b_c9b3d51aa1c84e8ca7e2c0d63564e5e6.pdf,file:$HOME/Downloads/RyanVaccination (2).pdf,file:$HOME/Downloads/Photos-001/IMG_20220605_130059.jpg
+Recent URLs[$e]=file:$HOME/ssh/
+listViewIconSize=63
+
+[KPropertiesDialog]
+Height 1440=600
+Width 2560=493

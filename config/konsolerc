@@ -1,0 +1,20 @@
+[Desktop Entry]
+DefaultProfile=
+
+[Favorite Profiles]
+Favorites=
+
+[KonsoleWindow]
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+Height 1080=1015
+Height 1440=1379
+State=AAAA/wAAAAD9AAAAAAAABPwAAAVDAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1276
+Width 2560=1276
+
+[TabBar]
+ShowQuickButtons=true
+TabBarPosition=Top

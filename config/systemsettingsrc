@@ -1,0 +1,25 @@
+[KFileDialog Settings]
+Recent Files[$e]=pfSense-UDP4-1194-ryan-config.zip,file:$HOME/Downloads/pfSense-UDP4-1194-ryan-config.zip
+Recent URLs[$e]=file:$HOME/Downloads/
+
+[KPropertiesDialog]
+Height 1080=472
+Width 1920=426
+
+[MainWindow]
+Height 1050=909
+Height 1080=911
+Height 1440=909
+Height 2160=1379
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABqIAAAONAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1680=1660
+Width 1920=1698
+Width 2560=1698
+Width 3840=2560
+Window-Maximized 720x1280=true
+
+[Open-with settings]
+CompletionMode=1
+History=/usr/local/bin/fusuma

@@ -1,0 +1,39 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+  title_transmit_bg_color = "#4087bb"
+[keybindings]
+  copy = <Primary>c
+  cycle_next = <Alt><Super>n
+  cycle_prev = <Alt><Super>p
+  edit_tab_title = <Primary>a
+  edit_terminal_title = <Primary>x
+  go_down = <Alt><Super>Down
+  go_left = <Alt><Super>Left
+  go_right = <Alt><Super>Right
+  go_up = <Alt><Super>Up
+  new_tab = <Primary>t
+  next_tab = <Primary>Tab
+  paste = <Primary>v
+  prev_tab = <Primary><Shift>Tab
+  split_horiz = <Primary><Shift>d
+  split_vert = <Primary>d
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.84
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    custom_command = /bin/bash; cd
+    login_shell = True
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    scrollback_infinite = True
+    word_chars = "-,./?%&#:_~"

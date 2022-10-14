@@ -1,0 +1,29 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/,$HOME/Pictures/Treehouse/
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME
+Recent URLs[$e]=file:$HOME/Pictures/Treehouse/,file:$HOME/Downloads/
+
+[MainWindow]
+Height 1440=1091
+State=AAAA/wAAAAD9AAAAAAAAA/4AAAP7AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+Width 2560=1022
+splitterSizes=681,340
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/cpupowermko-sl.de.v26.shell-extension.zip
+File2[$e]=$HOME/Downloads/Treehouse-001.zip
+File3[$e]=$HOME/Downloads/Photos-001.zip
+Name1[$e]=cpupowermko-sl.de.v26.shell-extension.zip
+Name2[$e]=Treehouse-001.zip
+Name3[$e]=Photos-001.zip
+
+[Viewer]
+Height 1440=442
+State=AAAA/wAAAAD9AAAAAAAACgAAAAUdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 2560=349
+Window-Maximized 1440x2560=true

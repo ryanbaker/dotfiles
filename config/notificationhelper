@@ -1,0 +1,10 @@
+[Event]
+hideApportNotifier=false
+hideDriverNotifier=false
+hideHookNotifier=false
+hideInstallNotifier=false
+hideL10nNotifier=false
+hideRestartNotifier=false
+
+[NotificationType]
+NotifyType=Combo

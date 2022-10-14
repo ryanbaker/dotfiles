@@ -1,0 +1,15 @@
+[General]
+last-saved-to[$e]=$HOME/Pictures
+lastSaveAsLocation=file:///home/ryan/Pictures/
+
+[GuiConfig]
+captureModeIndex=4
+cropRegion=1715,1025,704,239
+includeDecorations=true
+includePointer=true
+lastUsedSaveMode=2
+window-position=3628,375
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/flir_screenshot.png,file:$HOME/Pictures/flir_screenshot.jpeg
+Recent URLs[$e]=file:$HOME/Pictures/
