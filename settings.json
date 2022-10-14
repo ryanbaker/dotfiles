@@ -1,0 +1,72 @@
+{
+  "terminal.integrated.scrollback": 25000,
+  "diffEditor.originalEditable": true,
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#819028",
+    "editor.selectionHighlightBackground": "#586413"
+  },
+  "files.trimTrailingWhitespace": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation":false,
+    "editor.rulers": [80, 88],
+    "editor.mouseWheelZoom": true,
+    "window.restoreWindows": "all",
+    "files.associations": {
+        "*.cu": "cpp",
+      },
+    "editor.fontFamily": "'Ubuntu Mono', monospace",
+    "editor.folding": false,
+    "editor.glyphMargin": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "clangd.path": "/home/ryan/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/13.0.0/clangd_13.0.0/bin/clangd",
+    "[cpp]": {
+      "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.python"
+    },
+    "[julia]": {
+      "editor.defaultFormatter": "julialang.language-julia"
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true,
+      "**/3rdparty/*": true
+    },
+    "python.formatting.provider": "black",
+    "[c]": {
+      "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "cmake.configureOnOpen": true,
+    "clangd.onConfigChanged": "restart",
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": true,
+    "files.insertFinalNewline": true,
+    "glassit.alpha": 235,
+    "githubIssues.queries": [
+      {
+        "label": "My Issues",
+        "query": "default"
+      },
+      {
+        "label": "Created Issues",
+        "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+      },
+      {
+        "label": "Recent Issues",
+        "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+      }
+    ],
+    "editor.minimap.renderCharacters": false,
+}
