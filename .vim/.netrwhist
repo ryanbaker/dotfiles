@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
-let g:netrw_dirhist_1='/Users/ryanb/.config'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/ryan/dev/agx_cam_driver/device_tree'
+let g:netrw_dirhist_2='/home/ryan/dev/agx_cam_driver/drivers'
+let g:netrw_dirhist_3='/home/ryan/dev/d3-jetson-bsp-src-1.0.0/kernel/d3/drivers/d3/max9296'
+let g:netrw_dirhist_4='/home/ryan/dev/agx_cam_driver/device_tree'
+let g:netrw_dirhist_5='/home/ryan/nvidia/nvidia_sdk/JetPack_4.6_Linux_JETSON_AGX_XAVIER_TARGETS/Linux_for_Tegra/sources/hardware/nvidia/platform/t19x/common'
+let g:netrw_dirhist_6='/home/ryan/nvidia/nvidia_sdk/JetPack_4.6_Linux_JETSON_AGX_XAVIER_TARGETS/Linux_for_Tegra/sources/hardware/nvidia/platform/t19x'
+let g:netrw_dirhist_7='/home/ryan/nvidia/nvidia_sdk/JetPack_4.6_Linux_JETSON_AGX_XAVIER_TARGETS/Linux_for_Tegra/sources/hardware/nvidia/platform/t19x/galen'
+let g:netrw_dirhist_8='/home/ryan/nvidia/nvidia_sdk/JetPack_4.6_Linux_JETSON_AGX_XAVIER_TARGETS/Linux_for_Tegra/sources/hardware/nvidia/platform/t19x/galen/kernel-dts'

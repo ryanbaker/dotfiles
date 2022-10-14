@@ -45,10 +45,11 @@ nmap <silent> <F12> :ball <CR>
 
 set autoindent			"Auto indenting
 set cindent 			"auto un-indent close brackets
-set cinoptions=>4		"one tab only
-set tabstop=4			"Tab width
-set softtabstop=4		"Soft tabstop
-set shiftwidth=4		"how much to shift text when formatting
+set cinoptions=>2		"one tab only
+set tabstop=2			"Tab width
+set softtabstop=0		"Soft tabstop
+set shiftwidth=2		"how much to shift text when formatting
+set smarttab
 set backspace=2			"backspace over every thing
 set textwidth=78		"Text width
 set showmatch			"Blink to show the {} and () matches
