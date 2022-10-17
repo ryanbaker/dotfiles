@@ -9,3 +9,4 @@ ln -s dotfiles/.profile
 ln -s dotfiles/.bashrc
 ln -s dotfiles/.zshrc
 ln -s dotfiles/.zshenv
+ln -s dotfiles/.imwheelrc
