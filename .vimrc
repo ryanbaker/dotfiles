@@ -24,8 +24,6 @@ set nofen
 set path=.
 set ruler "Set the statusline in OS X
 
-call pathogen#infect()
-
 vmap p "_dP
 vmap P "_dP
 
