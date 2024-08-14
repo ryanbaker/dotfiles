@@ -39,11 +39,6 @@ export GIT_AUTHOR_EMAIL="ryan@compoundeye.com"
 export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
 export GIT_COMMITTER_EMAIL=$GIT_COMMITTER_EMAIL
 
-# Aws credentials - script that exports AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_DEFAULT_REGION
-# The key cannot be saved in this file because it cannot be pushed to github.
-if [ -f ~/.aws_environment.sh ]; then
-    . ~/.aws_environment.sh
-fi
 
 function agx {
     ssh ce@agx-$1
