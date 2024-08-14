@@ -1,4 +1,171 @@
-".*-chrome*"
+# This file is part of eRCaGuy_dotfiles: https://github.com/ElectricRCAircraftGuy/eRCaGuy_dotfiles
+
+# DESCRIPTION:
+# imwheel configuration settings to speed up the scroll speed for these applications, as a
+# multiplier by the numerical integer value at the end of the first two rows of each block.
+
+# INSTRUCTIONS:
+#
+# NB: `imwheel` only works fully in the X11 Window manager! In the Wayland window manager, it only
+# works in a very small set of programs which use XWayland (whatever that is), such as Chrome! To
+# get full functionality, you will need to switch back to the X11 window manager, as I explain
+# here: https://askubuntu.com/a/1470563/327339.
+#
+# 1. Install imwheel:
+#       sudo apt update
+#       sudo apt install imwheel
+# 2. Read & follow the instructions at the link below. Edit the two numbers at the top-right of each
+# configuration block below to set the mouse scroll speed.
+#	(PREFERRED) Symlink the file into the home dir:
+#		cd path/to/here
+#		ln -si "${PWD}/.imwheelrc" ~
+#	OR, copy this file to ~/.imwheelrc so you can edit it without affecting
+#   this repo:
+#       cp -i .imwheelrc ~
+
+# Note: to get an idea for what name to use for each application, as specified at the top of each
+# configuration block below, open the application of interest to get its process(es) running, then
+# search for its name among all running processes like this:
+#       ps aux | grep 'application_name'
+#
+# The above `ps` method may only work **sometimes!**. Even better: look at the .desktop shortcut
+# file for a given application, to see what the name of the executable is. Ex:
+# `cat /usr/share/applications/microsoft-edge.desktop | grep 'Exec'` will reveal the name of the
+# executable for the Microsoft Edge browser! As shown below, you can see that its executable name
+# is `microsoft-edge-stable`, located at path `/usr/bin/microsoft-edge-stable`:
+#
+#       $ cat /usr/share/applications/microsoft-edge.desktop | grep 'Exec'
+#       Exec=/usr/bin/microsoft-edge-stable %U
+#       Exec=/usr/bin/microsoft-edge-stable
+#       Exec=/usr/bin/microsoft-edge-stable --inprivate
+
+# Further instructions & help: see:
+# 1. ***** my answer here!: https://askubuntu.com/a/991680/327339
+# 1. My answer: https://askubuntu.com/a/1470563/327339
+
+
+# For `google-chrome` Web Browser
+"-chrome"
+None,      Up,   Button4, 3
+None,      Down, Button5, 3
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For Microsoft Edge Web Browser
+"microsoft-edge"
+None,      Up,   Button4, 3
+None,      Down, Button5, 3
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For Firefox Web Browser
+# Follow the instructions described here, editing a value inside the browser
+# itself: https://support.mozilla.org/en-US/questions/1019147
+#
+# Or just control it here too if you want:
+"firefox"
+None,      Up,   Button4, 2
+None,      Down, Button5, 2
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For `slack`
+"slack"
+None,      Up,   Button4, 4
+None,      Down, Button5, 4
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# Discord, a competitor to Slack; popular with the Ardupilot developers &
+# community, for instance.
+"discord"
+None,      Up,   Button4, 4
+None,      Down, Button5, 4
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For `libreoffice`
+"libreoffice"
+None,      Up,   Button4, 3
+None,      Down, Button5, 3
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For Sublime Text
+# "*sublime_text*"
+"sublime_text"
+None,      Up,   Button4, 3
+None,      Down, Button5, 3
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For VSCode (Microsoft Visual Studio Code)
+# - Use also the `"editor.mouseWheelScrollSensitivity": 3,` type setting in your
+#   `~/.config/Code/User/settings.json` file. It adjusts the mouse scroll wheel
+#   speed in MS VSCode too!
+"code"
+None,      Up,   Button4, 1
+None,      Down, Button5, 1
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For the `gnome-terminal` default shell/terminal that comes with Ubuntu
+"gnome-terminal"
+None,      Up,   Button4, 2
+None,      Down, Button5, 2
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# For the `terminator` terminal, which is the terminal I use most
+"terminator"
+None,      Up,   Button4, 2
+None,      Down, Button5, 2
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# NB: for the `micro` CLI-mouse-enabled text editor, don't use imwheel. Instead,
+# set the scroll speed inside micro directly with Ctrl + E, then the cmd: `set
+# scrollspeed 5`. That adds a `"scrollspeed": 5,` entry to
+# `~/.config/micro/settings.json`.
+#
+# See:
+# 1. My answer/notes:
+#    https://github.com/zyedidia/micro/issues/2134#issuecomment-1404047315
+#
+# That scroll speed of 5, in conjunction with a terminator scroll speed of 2,
+# above, for instance, results in a total scroll speed in `micro` of 5 x 2 = 10.
+
+# For Foxit Reader PDF viewer/editor
+"FoxitReader"
+None,      Up,   Button4, 4
+None,      Down, Button5, 4
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+# Desktop version of the Signal phone texting app
+"signal"
 None,      Up,   Button4, 4
 None,      Down, Button5, 4
 Control_L, Up,   Control_L|Button4
