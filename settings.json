@@ -1,72 +1,58 @@
 {
-  "terminal.integrated.scrollback": 25000,
-  "diffEditor.originalEditable": true,
-  "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#819028",
-    "editor.selectionHighlightBackground": "#586413"
-  },
-  "files.trimTrailingWhitespace": true,
-    "editor.tabSize": 2,
-    "editor.detectIndentation":false,
-    "editor.rulers": [80, 88],
-    "editor.mouseWheelZoom": true,
-    "window.restoreWindows": "all",
-    "files.associations": {
-        "*.cu": "cpp",
-      },
-    "editor.fontFamily": "'Ubuntu Mono', monospace",
-    "editor.folding": false,
-    "editor.glyphMargin": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "clangd.path": "/home/ryan/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/13.0.0/clangd_13.0.0/bin/clangd",
-    "[cpp]": {
-      "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
-
-    "[python]": {
-      "editor.defaultFormatter": "ms-python.python"
-    },
-    "[julia]": {
-      "editor.defaultFormatter": "julialang.language-julia"
-    },
-    "files.watcherExclude": {
-      "**/.git/objects/**": true,
-      "**/.git/subtree-cache/**": true,
-      "**/node_modules/*/**": true,
-      "**/3rdparty/*": true
-    },
-    "python.formatting.provider": "black",
-    "[c]": {
-      "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
-    "terminal.integrated.commandsToSkipShell": [
-      "language-julia.interrupt"
-    ],
-    "jupyter.askForKernelRestart": false,
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "workbench.editorAssociations": {
-      "*.ipynb": "jupyter-notebook"
-    },
-    "terminal.integrated.inheritEnv": false,
-    "cmake.configureOnOpen": true,
-    "clangd.onConfigChanged": "restart",
-    "julia.symbolCacheDownload": true,
-    "julia.enableTelemetry": true,
-    "files.insertFinalNewline": true,
-    "glassit.alpha": 235,
+    "glassit.alpha": 220,
     "githubIssues.queries": [
-      {
-        "label": "My Issues",
-        "query": "default"
-      },
-      {
-        "label": "Created Issues",
-        "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
-      },
-      {
-        "label": "Recent Issues",
-        "query": "state:open repo:${owner}/${repository} sort:updated-desc"
-      }
+
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
     ],
-    "editor.minimap.renderCharacters": false,
+    "githubPullRequests.queries": [
+        {
+            "label": "Local Pull Request Branches",
+            "query": "default"
+        },
+        {
+            "label": "Waiting For My Review",
+            "query": "repo:${owner}/${repository} is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "repo:${owner}/${repository} is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "repo:${owner}/${repository} is:open author:${user}"
+        },
+        {
+            "label": "My Closed PRs",
+            "query": "repo:${owner}/${repository} is:closed author:${user}"
+        },
+        {
+            "label": "All Open",
+            "query": "default"
+        }
+    ],
+    "diffEditor.maxComputationTime": 0,
+    "monkeyC.developerKeyPath": "/home/ryan/dev/garmin/developer_key",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "clangd.detectExtensionConflicts": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.showOptionsMovedNotification": false,
+    "dart.flutterSdkPath": "/home/ryan/dev/flutter",
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "github.copilot.nextEditSuggestions.enabled": true
 }

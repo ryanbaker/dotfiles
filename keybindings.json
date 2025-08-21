@@ -1,11 +1,29 @@
-// Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-    "key": "ctrl+tab",
-    "command": "workbench.action.nextEditorInGroup"
-  },
-  {
-    "key": "ctrl+shift+tab",
-    "command": "workbench.action.previousEditorInGroup"
-  }
+    {
+        "key": "ctrl+alt+p",
+        "command": "extension.vim_ctrl+p",
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-extension.vim_ctrl+p",
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    },
+    {
+        "key": "alt+meta+left",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "alt+meta+right",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+meta+up",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "alt+meta+down",
+        "command": "workbench.action.navigateDown"
+    }
 ]
