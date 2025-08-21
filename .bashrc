@@ -9,6 +9,7 @@
 cd
 
 export PATH
+PATH=$PATH:/home/ryan/dev/flutter/bin/
 
 # User specific aliases and functions
 alias karno='ssh 10.211.55.6'
@@ -41,7 +42,7 @@ export GIT_COMMITTER_EMAIL=$GIT_COMMITTER_EMAIL
 
 
 function agx {
-    ssh ce@agx-$1
+    ~/dev/CompoundEye-CUDA/env/ce_ssh.sh ce@agx-$1
 }
 
 function zopa {

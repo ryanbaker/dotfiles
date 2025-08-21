@@ -17,3 +17,6 @@
     textconv=odt2txt
 [color "diff"]
 	meta = bold blue
+[safe]
+	directory = /src
+	directory = /src
