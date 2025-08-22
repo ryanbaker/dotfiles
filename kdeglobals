@@ -121,6 +121,7 @@ widgetStyle=Breeze
 Theme=breeze
 
 [KDE]
+AnimationDurationFactor=0.08838834764831843
 ColorScheme=Breeze
 contrast=4
 widgetStyle=Breeze
@@ -140,6 +141,7 @@ Show Speedbar=true
 Show hidden files=false
 Sort by=Date
 Sort directories first=true
+Sort hidden files last=false
 Sort reversed=true
 Speedbar Width=138
 View Style=Simple
