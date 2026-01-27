@@ -1,0 +1,2 @@
+ACTION=="add|remove", SUBSYSTEM=="input", RUN+="/bin/su nicola -c '/home/ryan/dotfiles/imwheel-mouse-manager.sh'"
+

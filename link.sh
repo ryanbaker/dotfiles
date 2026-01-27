@@ -10,3 +10,5 @@ ln -s dotfiles/.bashrc
 ln -s dotfiles/.zshrc
 ln -s dotfiles/.zshenv
 ln -s dotfiles/.imwheelrc
+
+sudo ln -s ~/dotfiles/99-mouse-imwheel.rules /etc/udev/rules.d/
