@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Touchpad Scroll Speed
-Exec=sh -c "sleep 2 && xinput set-prop 'CUST0001:00 06CB:CDAD Touchpad' 'libinput Scrolling Pixel Distance' 50"
+Exec=sh -c "sleep 2 && xinput set-prop 'CUST0001:00 06CB:CDAD Touchpad' 'libinput Scrolling Pixel Distance' 45"
 Hidden=false
 NoDisplay=false
 X-KDE-AutostartScript=true
