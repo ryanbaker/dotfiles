@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Imwheel Mouse Manager
+Exec=/home/ryan/dotfiles/imwheel-mouse-manager.sh
+Hidden=false
+NoDisplay=false
+X-KDE-AutostartScript=true

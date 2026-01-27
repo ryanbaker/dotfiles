@@ -11,4 +11,6 @@ ln -s dotfiles/.zshrc
 ln -s dotfiles/.zshenv
 ln -s dotfiles/.imwheelrc
 
+ln -s ~/dotfiles/touchpad-scroll.desktop ~/.config/autostart/
+ln -s ~/dotfiles/imwheel.sh.desktop ~/.config/autostart/
 sudo ln -s ~/dotfiles/99-mouse-imwheel.rules /etc/udev/rules.d/
