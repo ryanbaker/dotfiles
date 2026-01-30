@@ -14,3 +14,5 @@ ln -s dotfiles/.imwheelrc
 ln -s ~/dotfiles/touchpad-scroll.desktop ~/.config/autostart/
 ln -s ~/dotfiles/imwheel.sh.desktop ~/.config/autostart/
 sudo ln -s ~/dotfiles/99-mouse-imwheel.rules /etc/udev/rules.d/
+ln -s ~/dotfiles/vscode_keybindings.json ~/.config/Code/User/keybindings.json
+ln -s ~/dotfiles/vscode_settings.json ~/.config/Code/User/settings.json

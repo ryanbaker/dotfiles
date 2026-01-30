@@ -1,0 +1,78 @@
+{
+    "glassit.alpha": 220,
+    "githubIssues.queries": [
+
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "githubPullRequests.queries": [
+        {
+            "label": "Local Pull Request Branches",
+            "query": "default"
+        },
+        {
+            "label": "Waiting For My Review",
+            "query": "repo:${owner}/${repository} is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "repo:${owner}/${repository} is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "repo:${owner}/${repository} is:open author:${user}"
+        },
+        {
+            "label": "My Closed PRs",
+            "query": "repo:${owner}/${repository} is:closed author:${user}"
+        },
+        {
+            "label": "All Open",
+            "query": "default"
+        }
+    ],
+    "diffEditor.maxComputationTime": 0,
+    "monkeyC.developerKeyPath": "/home/ryan/dev/garmin/developer_key",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "clangd.detectExtensionConflicts": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.showOptionsMovedNotification": false,
+    "dart.flutterSdkPath": "/home/ryan/dev/flutter",
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "githubPullRequests.pullBranch": "never",
+    "rewrap.wrappingColumn": 80,
+    "rewrap.autoWrap.enabled": true,
+    "files.trimTrailingWhitespace": true,
+
+    "C_Cpp.intelliSenseEngine": "tag parser",
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+    "C_Cpp.workspaceParsingPriority": "low",
+    "C_Cpp.files.exclude": {
+        "**/build_*/**": true,
+        "**/nvidia-oot/**": true,
+        "**/.git/**": true,
+        "**/*.o": true,
+        "**/*.ko": true,
+        "**/*.so": true
+    },
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.sh": "default"
+    }
+}
