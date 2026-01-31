@@ -28,12 +28,18 @@
     },
     {
         "key": "pagedown",
-        "command": "cursorPageDownSelect",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'",
+        "args": {
+          "after": ["3", "0", "j"]
+        }
     },
     {
         "key": "pageup",
-        "command": "cursorPageUpSelect",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'",
+        "args": {
+          "after": ["3", "0", "k"]
+        }
     }
 ]
