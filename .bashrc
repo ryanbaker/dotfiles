@@ -41,25 +41,30 @@ export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
 export GIT_COMMITTER_EMAIL=$GIT_COMMITTER_EMAIL
 
 
-function agx {
-    local num=$1
+function ce_ssh {
+    local prefix=$1
+    local num=$2
     local host=""
 
     # Try .local first
-    if timeout 0.1 getent hosts agx-${num}.local &>/dev/null; then
-        host="agx-${num}.local"
-    elif getent hosts agx-${num}.rwc.compoundeye.com &>/dev/null; then
-        host="agx-${num}.rwc.compoundeye.com"
+    if timeout 0.5 getent hosts ${prefix}-${num}.local &>/dev/null; then
+        host="${prefix}-${num}.local"
+    elif getent hosts ${prefix}-${num}.rwc.compoundeye.com &>/dev/null; then
+        host="${prefix}-${num}.rwc.compoundeye.com"
     else
         # Just try the host without anything appended
-        host="agx-${num}"
+        host="${prefix}-${num}"
     fi
 
     ~/dev/CompoundEye-CUDA/env/ce_ssh.sh ce@${host}
 }
 
+function agx {
+    ce_ssh agx $1
+}
+
 function nx {
-    ~/dev/CompoundEye-CUDA/env/ce_ssh.sh ce@nx-$1
+    ce_ssh nx $1
 }
 
 function zopa {
