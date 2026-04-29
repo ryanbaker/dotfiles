@@ -71,6 +71,30 @@ function zopa {
     ssh -p2222 -i ~/.ssh/zopa_id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@$1
 }
 
+vpn() {
+    case "$1" in
+        on)
+            sudo systemctl start warp-svc
+            while [ ! -S /run/cloudflare-warp/warp_service ]; do
+                sleep 0.5
+            done
+            warp-cli connect
+            warp-cli status
+            ;;
+        off)
+            if systemctl is-active --quiet warp-svc; then
+                warp-cli disconnect
+                sudo systemctl stop warp-svc
+            else
+                echo "VPN is already off"
+            fi
+            ;;
+        *)
+            echo "Usage: vpn [on|off]"
+            ;;
+    esac
+}
+
 SED_VERSION=`sed --version 2>&1 | head -1 | cut -f4 -d' '`
 if [ "$SED_VERSION" != "4.1.5" ]; then
     export PS1='[\[\033[0;35m\]\h\[\033[0;33m\] \w\[\033[00m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[137m\]]$ '
