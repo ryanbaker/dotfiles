@@ -74,5 +74,6 @@
     "workbench.editorAssociations": {
         "*.copilotmd": "vscode.markdown.preview.editor",
         "*.sh": "default"
-    }
+    },
+    "chat.viewSessions.orientation": "stacked"
 }
