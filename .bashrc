@@ -73,7 +73,7 @@ function zopa {
 
 vpn() {
     case "$1" in
-        on)
+        on|up)
             sudo systemctl start warp-svc
             while [ ! -S /run/cloudflare-warp/warp_service ]; do
                 sleep 0.5
@@ -81,13 +81,16 @@ vpn() {
             warp-cli connect
             warp-cli status
             ;;
-        off)
+        off|down)
             if systemctl is-active --quiet warp-svc; then
                 warp-cli disconnect
                 sudo systemctl stop warp-svc
             else
                 echo "VPN is already off"
             fi
+            ;;
+        status)
+            warp-cli status
             ;;
         *)
             echo "Usage: vpn [on|off]"
