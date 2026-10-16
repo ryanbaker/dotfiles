@@ -44,8 +44,24 @@ export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 function ce_ssh {
     local prefix=$1
     local num=$2
+    local arg=$3
     local name="${prefix}-${num}"
     local host=""
+
+    if [ "$arg" = "-p" ]; then
+        # Subshell: the sourced scripts use set -e and exit, which would
+        # otherwise apply to (and close) the interactive shell
+        (
+            source ~/dev/CompoundEye-CUDA/vidar/scripts/aws_credentials.sh
+            source ~/dev/CompoundEye-CUDA/vidar/scripts/aws_resources.sh
+            RIG_PASSWORD=$(RIG=$name ~/dev/CompoundEye-CUDA/vidar/scripts/lookup_rig_password.sh 2>/dev/null || :)
+            if [ -n "$RIG_PASSWORD" ]; then
+                echo "Rig password: $RIG_PASSWORD"
+            else
+                echo "No stored rig password"
+            fi
+        )
+    fi
 
     # Probe ssh on every candidate in parallel; the first to accept a
     # connection wins. read returns on the first line, so we don't wait
@@ -65,11 +81,11 @@ function ce_ssh {
 }
 
 function agx {
-    ce_ssh agx $1
+    ce_ssh agx $1 $2
 }
 
 function nx {
-    ce_ssh nx $1
+    ce_ssh nx $1 $2
 }
 
 function agx-who {
