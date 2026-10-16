@@ -67,6 +67,10 @@ function nx {
     ce_ssh nx $1
 }
 
+function who {
+    python3 ~/dev/CompoundEye-CUDA/py/devops/agx.py who
+}
+
 function zopa {
     ssh -p2222 -i ~/.ssh/zopa_id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@$1
 }
@@ -103,3 +107,5 @@ if [ "$SED_VERSION" != "4.1.5" ]; then
     export PS1='[\[\033[0;35m\]\h\[\033[0;33m\] \w\[\033[00m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[137m\]]$ '
 fi
 
+export CCACHE_HOST_DIR=$HOME/.cache/ce-ccache
+export PATH="$HOME/.local/bin:$PATH"
