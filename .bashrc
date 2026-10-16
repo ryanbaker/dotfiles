@@ -38,23 +38,28 @@ shopt -s histappend #append instead of restarting on each new session
 export GIT_AUTHOR_NAME="Ryan Baker"
 export GIT_AUTHOR_EMAIL="ryan@compoundeye.com"
 export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
-export GIT_COMMITTER_EMAIL=$GIT_COMMITTER_EMAIL
+export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 
 
 function ce_ssh {
     local prefix=$1
     local num=$2
+    local name="${prefix}-${num}"
     local host=""
 
-    # Try .local first
-    if timeout 0.5 getent hosts ${prefix}-${num}.local &>/dev/null; then
-        host="${prefix}-${num}.local"
-    elif getent hosts ${prefix}-${num}.rwc.compoundeye.com &>/dev/null; then
-        host="${prefix}-${num}.rwc.compoundeye.com"
-    else
-        # Just try the host without anything appended
-        host="${prefix}-${num}"
-    fi
+    # Probe ssh on every candidate in parallel; the first to accept a
+    # connection wins. read returns on the first line, so we don't wait
+    # for the slower probes to time out. The timeout is generous because
+    # DNS over WARP for .mesh names regularly takes 1-2.5s.
+    read -r host < <(
+        for h in "${name}.local" "${name}.rwc.compoundeye.com" "${name}.mesh.compoundeye.com"; do
+            ( timeout 5 bash -c 'exec 3<>"/dev/tcp/$1/22"' _ "$h" 2>/dev/null && echo "$h" ) &
+        done
+        wait
+    )
+
+    # Nothing answered: just try the host without anything appended
+    host="${host:-$name}"
 
     ~/dev/CompoundEye-CUDA/env/ce_ssh.sh ce@${host}
 }
@@ -67,7 +72,7 @@ function nx {
     ce_ssh nx $1
 }
 
-function who {
+function agx-who {
     python3 ~/dev/CompoundEye-CUDA/py/devops/agx.py who
 }
 
