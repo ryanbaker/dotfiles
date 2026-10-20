@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Id": "restorewindowscreens",
+        "Name": "Restore Window Screens",
+        "Description": "Moves windows back to where they were when a monitor disconnects and reconnects (e.g. monitor deep sleep on screen-off).",
+        "Version": "1.0",
+        "License": "MIT",
+        "EnabledByDefault": false
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
